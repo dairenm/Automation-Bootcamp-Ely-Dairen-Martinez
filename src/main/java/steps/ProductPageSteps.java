@@ -57,7 +57,7 @@ public class ProductPageSteps extends BaseSteps{
     }
     public void compareActualAndExpectedProductName() throws InterruptedException {
         String actualSelectedProductName = actualProductName();
-        System.out.println("Selected option is: "+ actualSelectedProductName);
+        System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
         String expectedProductName = productName();
         System.out.println("Expected Product Name: " + expectedProductName);
         CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
