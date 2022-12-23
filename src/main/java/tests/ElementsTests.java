@@ -158,12 +158,6 @@ public class ElementsTests extends BaseTest {
         WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                         "//a[@href='prod.html?idp_=1']")));
-
-
-
-        String actualSelectedProductName2 = productPageSteps.actualProductName();
-        System.out.println("Selected option is: "+ actualSelectedProductName2);
-
         productPageSteps.compareActualAndExpectedProductName();
 
 

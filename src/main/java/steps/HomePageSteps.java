@@ -38,6 +38,7 @@ public class HomePageSteps extends BaseSteps{
 
     public String selectProduct() {
         String expectedProduct = null;
+
         Random rand = new Random();
         switch(rand.nextInt(8)+1)// default range is from(0 to 14) +1 at the end makes the range from(1 to 15)
         {
