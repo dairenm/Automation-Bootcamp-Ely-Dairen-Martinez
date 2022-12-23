@@ -160,7 +160,6 @@ public class ElementsTests extends BaseTest {
                         "//a[@href='prod.html?idp_=1']")));
         productPageSteps.compareActualAndExpectedProductName();
 
-
         String expectedProductPrice = productPageSteps.productPrice();
         print("Expected Product Price: " + expectedProductPrice);
 
@@ -168,16 +167,6 @@ public class ElementsTests extends BaseTest {
 
         String expectedProductDescription = productPageSteps.productDescription();
         print("Expected Product Description: " + expectedProductDescription);
-
-
-
-
-
-
-
-
-
-
 
 
     }

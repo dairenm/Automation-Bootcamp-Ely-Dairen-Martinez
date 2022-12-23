@@ -5,6 +5,8 @@ import org.openqa.selenium.support.PageFactory;
 import pageobjects.ProductPage;
 import tests.CustomAssertions;
 
+import java.util.ArrayList;
+
 
 public class ProductPageSteps extends BaseSteps{
     ProductPage productPage = PageFactory.initElements(webDriver, ProductPage.class);
@@ -28,31 +30,22 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
-    public String actualProductName() {
+    public String actualProductName () {
         String actualSelectedProductName = homePageSteps.selectProduct();
         System.out.println(actualSelectedProductName);
         int selectedProductName=Integer.parseInt(actualSelectedProductName);
-
-        if (selectedProductName == 1){
-            actualSelectedProductName= "Samsung galaxy s6";
-        } else if (selectedProductName == 2){
-            actualSelectedProductName= "Nokia lumia 1520";
-        } else if (selectedProductName == 3) {
-            actualSelectedProductName= "Nexus 6";
-        } else if (selectedProductName == 4) {
-            actualSelectedProductName= "Samsung galaxy s7";
-        } else if (selectedProductName == 5) {
-            actualSelectedProductName= "Iphone 6 32gb";
-        } else if (selectedProductName == 6) {
-            actualSelectedProductName= "Sony xperia z5";
-        } else if (selectedProductName == 7) {
-            actualSelectedProductName= "HTC One M9";
-        } else if (selectedProductName == 8) {
-            actualSelectedProductName= "Sony vaio i5";
-        } else if (selectedProductName == 9) {
-            actualSelectedProductName= "Sony vaio i7";
-        }
-        return actualSelectedProductName;
+        ArrayList<String> names=new ArrayList();
+        names.add("Samsung galaxy s6");
+        names.add("Nokia lumia 1520");
+        names.add("Nexus 6");
+        names.add("Samsung galaxy s7");
+        names.add("Iphone 6 32gb");
+        names.add("Sony xperia z5");
+        names.add("HTC One M9");
+        names.add("Sony vaio i5");
+        names.add("Sony vaio i7");
+        String str=names.get(selectedProductName-1);
+        return str;
 
     }
     public void compareActualAndExpectedProductName() throws InterruptedException {
