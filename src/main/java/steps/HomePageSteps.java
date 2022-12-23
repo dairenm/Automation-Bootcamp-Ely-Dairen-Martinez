@@ -16,17 +16,17 @@ public class HomePageSteps extends BaseSteps{
     DropDownExamplePage dropDownExamplePage = PageFactory.initElements(webDriver, DropDownExamplePage.class);
     public HomePageSteps(WebDriver webDriver) { super(webDriver); }
 
+
+
+
     public String selectPhoneCategorie() {
-        System.out.println("First Categorie done");
         return getElementText(homePage.getTxtFirstCategorie());
     }
 
     public String selectLaptopCategorie() {
-        System.out.println("Second Categorie done");
         return getElementText(homePage.getTxtSecondCategorie());
     }
     public String selectMonitorCategorie() {
-        System.out.println("Third Categorie done");
         return getElementText(homePage.getTxtThirdCategorie());
     }
 

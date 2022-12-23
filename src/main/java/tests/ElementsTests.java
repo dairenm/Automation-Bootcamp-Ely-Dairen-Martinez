@@ -147,6 +147,10 @@ public class ElementsTests extends BaseTest {
         print("View option is: " + laptopCategorie);
         String monitorCategorie = homePageSteps.selectMonitorCategorie();
         print("View option is: " + monitorCategorie);
+        CustomAssertions.isTextEqual("Phones", phoneCategorie);
+        CustomAssertions.isTextEqual("Laptops", laptopCategorie);
+        CustomAssertions.isTextEqual("Monitors", monitorCategorie);
+
     }
 
     @Test(description = "Products in the catalog displayed")
