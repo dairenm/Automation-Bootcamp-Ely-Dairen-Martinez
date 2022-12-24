@@ -30,10 +30,9 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
+
     public String actualProductName () {
-        String actualSelectedProductName = homePageSteps.selectProduct();
-        System.out.println(actualSelectedProductName);
-        int selectedProductName=Integer.parseInt(actualSelectedProductName);
+        int selectedProductName= homePageSteps.selectProduct();
         ArrayList<String> names=new ArrayList();
         names.add("Samsung galaxy s6");
         names.add("Nokia lumia 1520");
@@ -45,15 +44,33 @@ public class ProductPageSteps extends BaseSteps{
         names.add("Sony vaio i5");
         names.add("Sony vaio i7");
         String str=names.get(selectedProductName-1);
+        System.out.println(str);
         return str;
-
     }
+
     public void compareActualAndExpectedProductName() throws InterruptedException {
+
         String actualSelectedProductName = actualProductName();
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
         String expectedProductName = productName();
         System.out.println("Expected Product Name: " + expectedProductName);
         CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
+
+    }
+
+    public void actualProductPrice () {
+
+        ArrayList<String> prices=new ArrayList();
+        prices.add("$360 *includes tax");
+        prices.add("$820 *includes tax");
+        prices.add("$650 *includes tax");
+        prices.add("$800 *includes tax");
+        prices.add("$790 *includes tax");
+        prices.add("$320 *includes tax");
+        prices.add("$700 *includes tax");
+        prices.add("$790 *includes tax");
+        prices.add("$790 *includes tax");
+
 
     }
 

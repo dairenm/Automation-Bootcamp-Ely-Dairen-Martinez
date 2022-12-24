@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="TestNG.ElementsTests.testCatalogDisplayed">
     <configuration name="ElementsTests.ejemplo2" type="TestNG" temporary="true" nameIsGenerated="true">
@@ -123,10 +126,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
-        <item itemvalue="TestNG.ElementsTests.ejemplo2" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
-        <item itemvalue="TestNG.ElementsTests.testSelectMaleGender" />
         <item itemvalue="TestNG.ElementsTests.hoverOver" />
+        <item itemvalue="TestNG.ElementsTests.ejemplo2" />
+        <item itemvalue="TestNG.ElementsTests.testSelectMaleGender" />
       </list>
     </recent_temporary>
   </component>
@@ -156,50 +159,63 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="28" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/ElementsTests.java</url>
+          <line>142</line>
+          <properties class="tests.ElementsTests" method="testVerifiedCategories">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="31" />
+          <line>45</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="33" />
+          <line>52</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
           <line>53</line>
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
           <line>54</line>
-          <option name="timeStamp" value="35" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
           <line>55</line>
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
           <line>56</line>
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="38" />
+          <line>46</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

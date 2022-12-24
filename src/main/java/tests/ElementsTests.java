@@ -158,12 +158,11 @@ public class ElementsTests extends BaseTest {
         WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                         "//a[@href='prod.html?idp_=1']")));
+
         productPageSteps.compareActualAndExpectedProductName();
 
         String expectedProductPrice = productPageSteps.productPrice();
         print("Expected Product Price: " + expectedProductPrice);
-
-
 
         String expectedProductDescription = productPageSteps.productDescription();
         print("Expected Product Description: " + expectedProductDescription);
