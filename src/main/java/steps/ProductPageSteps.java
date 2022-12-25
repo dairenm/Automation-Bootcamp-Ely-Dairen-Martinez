@@ -13,7 +13,6 @@ public class ProductPageSteps extends BaseSteps{
     HomePageSteps homePageSteps = PageFactory.initElements(webDriver, HomePageSteps.class);
     CustomAssertions customAssertions = PageFactory.initElements(webDriver, CustomAssertions.class);
 
-
     public ProductPageSteps(WebDriver webDriver) { super(webDriver); }
 
     public String productName() throws InterruptedException {
@@ -30,9 +29,7 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
-
-    public String actualProductName () {
-        int selectedProductName= homePageSteps.selectProduct();
+    public void actualProductName () throws InterruptedException {
         ArrayList<String> names=new ArrayList();
         names.add("Samsung galaxy s6");
         names.add("Nokia lumia 1520");
@@ -43,22 +40,6 @@ public class ProductPageSteps extends BaseSteps{
         names.add("HTC One M9");
         names.add("Sony vaio i5");
         names.add("Sony vaio i7");
-        String str=names.get(selectedProductName-1);
-        System.out.println(str);
-        return str;
-    }
-
-    public void compareActualAndExpectedProductName() throws InterruptedException {
-
-        String actualSelectedProductName = actualProductName();
-        System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
-        String expectedProductName = productName();
-        System.out.println("Expected Product Name: " + expectedProductName);
-        CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
-
-    }
-
-    public void actualProductPrice () {
 
         ArrayList<String> prices=new ArrayList();
         prices.add("$360 *includes tax");
@@ -71,7 +52,34 @@ public class ProductPageSteps extends BaseSteps{
         prices.add("$790 *includes tax");
         prices.add("$790 *includes tax");
 
+        ArrayList<String> description=new ArrayList();
+        prices.add("$360 *includes tax");
+        prices.add("$820 *includes tax");
+        prices.add("$650 *includes tax");
+        prices.add("$800 *includes tax");
+        prices.add("$790 *includes tax");
+        prices.add("$320 *includes tax");
+        prices.add("$700 *includes tax");
+        prices.add("$790 *includes tax");
+        prices.add("$790 *includes tax");
 
+        int selectedProductName= homePageSteps.selectProduct();
+        String actualSelectedProductName=names.get(selectedProductName-1);
+        System.out.println(actualSelectedProductName);
+        String actualSelectedProductPrice=prices.get(selectedProductName-1);
+        System.out.println(actualSelectedProductPrice);
+
+        System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
+        String expectedProductName = productName();
+        System.out.println("Expected Product Name: " + expectedProductName);
+        CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
+
+        System.out.println("Actual selected Product Name: "+ actualSelectedProductPrice);
+        String expectedProductPrice = productPrice();
+        System.out.println("Expected Product Name: " + expectedProductPrice);
+        CustomAssertions.isTextEqual(actualSelectedProductPrice, expectedProductPrice);
+        
     }
+
 
 }

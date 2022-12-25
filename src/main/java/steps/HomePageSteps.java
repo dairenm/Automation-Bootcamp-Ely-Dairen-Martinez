@@ -16,7 +16,6 @@ public class HomePageSteps extends BaseSteps{
 
 
 
-
     public String selectPhoneCategorie() {
         return getElementText(homePage.getTxtFirstCategorie());
     }
@@ -32,6 +31,7 @@ public class HomePageSteps extends BaseSteps{
         System.out.println("Attempting to select option: " + text);
         selectFromDropDownByText(dropDownExamplePage.getDropDownFirst(), text);
     }
+
 
 
     public int selectProduct() {
@@ -88,6 +88,7 @@ public class HomePageSteps extends BaseSteps{
         }
         return expectedProduct;
     }
+
 
 
 }
