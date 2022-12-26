@@ -28,13 +28,13 @@ public class HomePageSteps extends BaseSteps{
         return getElementText(homePage.getTxtThirdCategorie());
     }
 
-    public int selectProduct() {
+    public int selectProduct() { // Randomly select a product on the page
         new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
                 (By.xpath("//a[@href='prod.html?idp_=1']")));
         int expectedProduct = Integer.parseInt(String.valueOf(1));
 
         Random rand = new Random();
-        switch(rand.nextInt(8)+1)// default range is from(0 to 14) +1 at the end makes the range from(1 to 15)
+        switch(rand.nextInt(8)+1)
         {
             case 1:
                 homePage.getTxtFirstProduct().click();

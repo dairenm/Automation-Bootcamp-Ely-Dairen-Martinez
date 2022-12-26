@@ -21,8 +21,8 @@ public class ElementsTests extends BaseTest {
 
     @Test(description = "SR-12120 Verify products in the catalog displayed")
     public void testCatalogDisplayed() throws InterruptedException {
-        productPageSteps.productElements();
-        productPageSteps.addToCartButton();
+        productPageSteps.verifyProductElements();
+        productPageSteps.verifyAddToCartButton();
     }
 
     @Test(description ="SR-12121 Verify the alert by clicking the add to cart button")

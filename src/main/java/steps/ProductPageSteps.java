@@ -44,9 +44,9 @@ public class ProductPageSteps extends BaseSteps{
         webDriver.switchTo().alert().accept();
     }
 
-    public static ArrayList<String> names = new ArrayList<String>();
-    public static ArrayList<String> prices = new ArrayList<String>();
-    public static ArrayList<String> description = new ArrayList<String>();
+    public static ArrayList<String> names = new ArrayList();
+    public static ArrayList<String> prices = new ArrayList();
+    public static ArrayList<String> description = new ArrayList();
     public static ArrayList<WebElement> images=new ArrayList();
 
     public void constants() {
@@ -93,27 +93,31 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
-    public void productElements () throws InterruptedException {
-        int selectedProduct= homePageSteps.selectProduct();
+    public void verifyProductElements () throws InterruptedException {
+        int selectedProduct= homePageSteps.selectProduct(); // Returns the randomly selected value
         constants();
+        //Verify the name of the product obtained against the expected
         String actualSelectedProductName=names.get(selectedProduct-1);
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
         String expectedProductName = productName();
         System.out.println("Expected Product Name: " + expectedProductName);
         CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
 
+        //Verify the price of the product obtained against the expected
         String actualSelectedProductPrice=prices.get(selectedProduct-1);
         System.out.println("Actual selected Product Price: "+ actualSelectedProductPrice);
         String expectedProductPrice = productPrice();
         System.out.println("Expected Product Price: " + expectedProductPrice);
         CustomAssertions.isTextEqual(actualSelectedProductPrice, expectedProductPrice);
 
+        //Verify the description of the product obtained against the expected
         String actualSelectedProductDescription=description.get(selectedProduct-1);
         System.out.println("Actual selected Product Description: "+ actualSelectedProductDescription);
         String expectedProductDescription = productDescription();
         System.out.println("Expected Product Description: " + expectedProductDescription);
         CustomAssertions.isTextEqual(actualSelectedProductDescription, expectedProductDescription);
 
+        //Verify that the product image has been displayed
         WebElement actualSelectedImage= images.get(selectedProduct-1);
         Thread.sleep(1000);
         boolean actualSelectedProductImage= isElementDisplayed(actualSelectedImage);
@@ -122,12 +126,12 @@ public class ProductPageSteps extends BaseSteps{
 
     }
 
-    public void addToCartButton() {
+    public void verifyAddToCartButton() { //Verify that the Add To Cart button has been displayed
         CustomAssertions.isBooleanEqual(productAddToCartButton(),true);
         System.out.println("Button Displayed");
     }
 
-    public void addToCartButtonClick(){
+    public void addToCartButtonClick(){ //Click on the Add To Cart button
         new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
                 (By.xpath("//a[@class='btn btn-success btn-lg']")));
         productPage.getBtnAddToCart().click();
