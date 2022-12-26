@@ -121,13 +121,13 @@ public class ProductPageSteps extends BaseSteps{
         WebElement actualSelectedImage= images.get(selectedProduct-1);
         Thread.sleep(1000);
         boolean actualSelectedProductImage= isElementDisplayed(actualSelectedImage);
-        CustomAssertions.isBooleanEqual(actualSelectedProductImage, true);
+        CustomAssertions.isElementDisplayed(actualSelectedProductImage, true);
         System.out.println("Image Displayed");
 
     }
 
     public void verifyAddToCartButton() { //Verify that the Add To Cart button has been displayed
-        CustomAssertions.isBooleanEqual(productAddToCartButton(),true);
+        CustomAssertions.isElementDisplayed(productAddToCartButton(),true);
         System.out.println("Button Displayed");
     }
 
