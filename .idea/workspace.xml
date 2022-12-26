@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/ProductPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElementsTests.testSelectMaleGender" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ElementsTests.testD" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ElementsTests" />
-      <option name="METHOD_NAME" value="testSelectMaleGender" />
+      <option name="METHOD_NAME" value="testD" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
+        <item itemvalue="TestNG.ElementsTests.testD" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
         <item itemvalue="TestNG.ElementsTests.hoverOver" />
         <item itemvalue="TestNG.ElementsTests.ejemplo2" />
-        <item itemvalue="TestNG.ElementsTests.testSelectMaleGender" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +174,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>116</line>
+          <line>118</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -186,23 +184,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>108</line>
+          <line>112</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>109</line>
+          <line>113</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
-          <line>90</line>
+          <line>95</line>
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java</url>
           <line>83</line>
           <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

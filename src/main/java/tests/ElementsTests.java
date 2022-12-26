@@ -163,4 +163,9 @@ public class ElementsTests extends BaseTest {
 
 
     }
+
+    @Test(description = "d")
+    public void testD(){
+        productPageSteps.toString();
+    }
 }
