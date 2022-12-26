@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Elements Tests">
-    <test verbose="2" preserve-order="true" name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen">
+    <test verbose="2" preserve-order="true" name="Bootcamp-Dairen">
         <classes>
             <class name="tests.ElementsTests"/>
         </classes>

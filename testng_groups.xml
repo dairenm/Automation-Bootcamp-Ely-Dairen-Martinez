@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true" name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen">
         <groups>
             <run>
-                <include name="SmokeSuite"></include>
+                <include name="FistSuite"></include>
             </run>
         </groups>
         <classes>

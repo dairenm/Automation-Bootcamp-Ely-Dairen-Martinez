@@ -19,10 +19,6 @@ public class BaseTest {
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void beforeTest() {
-        //setupDriver("chrome");
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
-    }
 
     private void setupDriver(String browserName) {
         switch(browserName) {
@@ -31,8 +27,7 @@ public class BaseTest {
                 driver = new ChromeDriver();
                 break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "/Users/dm0921/Documents/GitHub/Bootcamp/drivers/geckodriver");
-                //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver");
+                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver");
                 driver = new FirefoxDriver();
                 break;
             default:
@@ -46,6 +41,6 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void afterTest() {
-        driver.quit();
+        driver.get("https://www.demoblaze.com/");
     }
 }

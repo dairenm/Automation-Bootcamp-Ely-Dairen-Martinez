@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/HomePageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_groups.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
       <recent name="ElementActions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ElementsTests.testAlertAddToCartButton">
+  <component name="RunManager" selected="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml">
     <configuration name="ElementsTests.testAlertAddToCartButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
         <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
-        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
-        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
       </list>
     </recent_temporary>
   </component>
