@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_groups.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
       <recent name="ElementActions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ElementsTests.testCatalogDisplayed">
+  <component name="RunManager" selected="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml">
     <configuration name="ElementsTests.testAlertAddToCartButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
@@ -54,24 +57,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ElementsTests" />
       <option name="METHOD_NAME" value="testAlertAddToCartButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElementsTests.testCartLinkInformation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="bootCamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ElementsTests" />
-      <option name="METHOD_NAME" value="testCartLinkInformation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,24 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElementsTests.testD" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="bootCamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ElementsTests" />
-      <option name="METHOD_NAME" value="testD" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElementsTests.testVerifiedCategories" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
@@ -133,13 +100,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="bootCamp" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_groups.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="bootCamp" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
-        <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
-        <item itemvalue="TestNG.ElementsTests.testCartLinkInformation" />
-        <item itemvalue="TestNG.ElementsTests.testD" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
+        <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
       </list>
     </recent_temporary>
   </component>
