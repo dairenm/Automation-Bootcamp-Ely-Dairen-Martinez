@@ -33,11 +33,18 @@ public class ProductPageSteps extends BaseSteps{
         return isElementDisplayed(productPage.getBtnAddToCart());
     }
 
+    public String browserTextAlert() throws InterruptedException {
+        return webDriver.switchTo().alert().getText();
+    }
+
+    public void browserBtnAlert() {
+        webDriver.switchTo().alert().accept();
+    }
+
     public static ArrayList<String> names = new ArrayList<String>();
     public static ArrayList<String> prices = new ArrayList<String>();
     public static ArrayList<String> description = new ArrayList<String>();
     public static ArrayList<WebElement> images=new ArrayList();
-
 
     public void constants() {
         names.add("Samsung galaxy s6");
@@ -83,35 +90,34 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
-
-        public void productElements () throws InterruptedException {
+    public void productElements () throws InterruptedException {
         int selectedProduct= homePageSteps.selectProduct();
         constants();
+
         String actualSelectedProductName=names.get(selectedProduct-1);
         System.out.println(actualSelectedProductName);
-        String actualSelectedProductPrice=prices.get(selectedProduct-1);
-        System.out.println(actualSelectedProductPrice);
-        String actualSelectedProductDescription=description.get(selectedProduct-1);
-        System.out.println(actualSelectedProductDescription);
-        WebElement actualSelectedImage= images.get(selectedProduct-1);
-        Thread.sleep(1000);
-        boolean actualSelectedProductImage= isElementDisplayed(actualSelectedImage);
-
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
         String expectedProductName = productName();
         System.out.println("Expected Product Name: " + expectedProductName);
         CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
 
+        String actualSelectedProductPrice=prices.get(selectedProduct-1);
+        System.out.println(actualSelectedProductPrice);
         System.out.println("Actual selected Product Price: "+ actualSelectedProductPrice);
         String expectedProductPrice = productPrice();
         System.out.println("Expected Product Price: " + expectedProductPrice);
         CustomAssertions.isTextEqual(actualSelectedProductPrice, expectedProductPrice);
 
+        String actualSelectedProductDescription=description.get(selectedProduct-1);
+        System.out.println(actualSelectedProductDescription);
         System.out.println("Actual selected Product Description: "+ actualSelectedProductDescription);
         String expectedProductDescription = productDescription();
         System.out.println("Expected Product Description: " + expectedProductDescription);
         CustomAssertions.isTextEqual(actualSelectedProductDescription, expectedProductDescription);
 
+        WebElement actualSelectedImage= images.get(selectedProduct-1);
+        Thread.sleep(1000);
+        boolean actualSelectedProductImage= isElementDisplayed(actualSelectedImage);
         CustomAssertions.isBooleanEqual(actualSelectedProductImage, true);
         System.out.println("Image Displayed");
 
@@ -122,5 +128,12 @@ public class ProductPageSteps extends BaseSteps{
         System.out.println("Button Displayed");
     }
 
+    public void addToCartButtonClick() throws InterruptedException {
+        Thread.sleep(2000);
+        productPage.getBtnAddToCart().click();
+        Thread.sleep(2000);
+
+
+    }
 
 }
