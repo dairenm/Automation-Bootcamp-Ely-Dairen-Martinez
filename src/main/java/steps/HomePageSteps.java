@@ -27,11 +27,6 @@ public class HomePageSteps extends BaseSteps{
         return getElementText(homePage.getTxtThirdCategorie());
     }
 
-    public void selectSearchEngine(String text) {
-        System.out.println("Attempting to select option: " + text);
-        selectFromDropDownByText(dropDownExamplePage.getDropDownFirst(), text);
-    }
-
 
 
     public int selectProduct() {

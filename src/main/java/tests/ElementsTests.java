@@ -162,9 +162,5 @@ public class ElementsTests extends BaseTest {
         productPageSteps.addToCartButton();
 
 
-        String expectedProductDescription = productPageSteps.productDescription();
-        print("Expected Product Description: " + expectedProductDescription);
-
-
     }
 }
