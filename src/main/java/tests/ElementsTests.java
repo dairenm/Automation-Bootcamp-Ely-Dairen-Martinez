@@ -139,7 +139,7 @@ public class ElementsTests extends BaseTest {
         CustomAssertions.isTextEqual("Event Triggered", hoverStatus);
     }
 
-    @Test(description = "Verify categories, SR-12111")
+    @Test(description = "SR-12111 Verify categories")
     public void testVerifiedCategories() {
         String phoneCategorie = homePageSteps.selectPhoneCategorie();
         print("View option is: " + phoneCategorie);
@@ -153,7 +153,7 @@ public class ElementsTests extends BaseTest {
 
     }
 
-    @Test(description = "Verify products in the catalog displayed")
+    @Test(description = "SR-12120 Verify products in the catalog displayed")
     public void testCatalogDisplayed() throws InterruptedException {
         WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
@@ -163,7 +163,7 @@ public class ElementsTests extends BaseTest {
 
     }
 
-    @Test(description ="Verify the alert by clicking the add to cart button SR-12121")
+    @Test(description ="SR-12121 Verify the alert by clicking the add to cart button")
     public void testAlertAddToCartButton() throws InterruptedException {
         WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
@@ -174,6 +174,15 @@ public class ElementsTests extends BaseTest {
         print("View option is: " + browserAlert);
         CustomAssertions.isTextEqual("Product added", browserAlert);
         productPageSteps.browserBtnAlert();
+
+
+    }
+
+    @Test(description = "SR-12130 Verify cart link information")
+    public void testCartLinkInformation() throws InterruptedException {
+        testAlertAddToCartButton();
+
+
 
     }
 }
