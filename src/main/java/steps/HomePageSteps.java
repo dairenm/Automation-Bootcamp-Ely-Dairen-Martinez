@@ -84,7 +84,4 @@ public class HomePageSteps extends BaseSteps{
         }
         return expectedProduct;
     }
-
-
-
 }
