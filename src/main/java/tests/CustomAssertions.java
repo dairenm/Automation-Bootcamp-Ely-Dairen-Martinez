@@ -32,5 +32,11 @@ public class CustomAssertions extends Assert {
     }
 
 
+    public static void isBooleanEqual (boolean actual, Boolean expected) {
+        String errorMsg = "Value " + actual + " is not as expected. Expected was: " + expected;
+        Assert.assertEquals(actual, expected, errorMsg);
+    }
+
+
 }
 

@@ -55,6 +55,11 @@ public class BaseSteps {
         return elementToGetText.getText();
     }
 
+    public boolean isElementDisplayed(WebElement element) {
+        return element.isDisplayed();
+    }
+
+
     public void selectFromDropDownByValue(WebElement dropDown, String value) {
         customSelect = new Select(dropDown);
         customSelect.selectByValue(value);
