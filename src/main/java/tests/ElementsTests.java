@@ -17,7 +17,6 @@ public class ElementsTests extends BaseTest {
         CustomAssertions.isTextEqual("Phones", phoneCategorie);
         CustomAssertions.isTextEqual("Laptops", laptopCategorie);
         CustomAssertions.isTextEqual("Monitors", monitorCategorie);
-
     }
 
     @Test(description = "SR-12120 Verify products in the catalog displayed")

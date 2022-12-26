@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/DragDropExamplePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/DropDownExamplePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HoverOverExamplePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/PracticeFormPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/SignUpPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/MiscellaneousSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PracticeFormSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/SignUpSteps.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
       <recent name="ElementActions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml">
+  <component name="RunManager" selected="TestNG.ElementsTests.testAlertAddToCartButton">
     <configuration name="ElementsTests.testAlertAddToCartButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
@@ -120,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
-        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
         <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
       </list>
     </recent_temporary>
   </component>
