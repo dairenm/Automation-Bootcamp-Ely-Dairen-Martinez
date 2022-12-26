@@ -1,11 +1,15 @@
 package steps;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.DropDownExamplePage;
 import pageobjects.HomePage;
 
+import java.time.Duration;
 import java.util.Random;
 
 public class HomePageSteps extends BaseSteps{
@@ -30,6 +34,8 @@ public class HomePageSteps extends BaseSteps{
 
 
     public int selectProduct() {
+        new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
+                (By.xpath("//a[@href='prod.html?idp_=1']")));
         int expectedProduct = Integer.parseInt(String.valueOf(1));
 
         Random rand = new Random();

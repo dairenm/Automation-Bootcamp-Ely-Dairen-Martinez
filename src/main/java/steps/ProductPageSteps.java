@@ -1,11 +1,15 @@
 package steps;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.ProductPage;
 import tests.CustomAssertions;
 
+import java.time.Duration;
 import java.util.ArrayList;
 
 
@@ -34,6 +38,7 @@ public class ProductPageSteps extends BaseSteps{
     }
 
     public String browserTextAlert() throws InterruptedException {
+        Thread.sleep(2000);
         return webDriver.switchTo().alert().getText();
     }
 
@@ -93,7 +98,6 @@ public class ProductPageSteps extends BaseSteps{
     public void productElements () throws InterruptedException {
         int selectedProduct= homePageSteps.selectProduct();
         constants();
-
         String actualSelectedProductName=names.get(selectedProduct-1);
         System.out.println(actualSelectedProductName);
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
@@ -128,12 +132,10 @@ public class ProductPageSteps extends BaseSteps{
         System.out.println("Button Displayed");
     }
 
-    public void addToCartButtonClick() throws InterruptedException {
-        Thread.sleep(2000);
+    public void addToCartButtonClick(){
+        new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
+                (By.xpath("//a[@class='btn btn-success btn-lg']")));
         productPage.getBtnAddToCart().click();
-        Thread.sleep(2000);
-
-
     }
 
 }

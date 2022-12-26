@@ -19,6 +19,7 @@ public class ElementsTests extends BaseTest {
     MiscellaneousSteps miscellaneousSteps = new MiscellaneousSteps(driver);
     HomePageSteps homePageSteps = new HomePageSteps(driver);
     ProductPageSteps productPageSteps = new ProductPageSteps(driver);
+    CartPageSteps cartPageSteps = new CartPageSteps(driver);
 
     @Test
     public void HelloWorldTest() {
@@ -155,34 +156,18 @@ public class ElementsTests extends BaseTest {
 
     @Test(description = "SR-12120 Verify products in the catalog displayed")
     public void testCatalogDisplayed() throws InterruptedException {
-        WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-                        "//a[@href='prod.html?idp_=1']")));
         productPageSteps.productElements();
         productPageSteps.addToCartButton();
-
     }
 
     @Test(description ="SR-12121 Verify the alert by clicking the add to cart button")
     public void testAlertAddToCartButton() throws InterruptedException {
-        WebElement txtPasswordMessage = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-                        "//a[@href='prod.html?idp_=1']")));
         homePageSteps.selectProduct();
         productPageSteps.addToCartButtonClick();
         String browserAlert=productPageSteps.browserTextAlert();
         print("View option is: " + browserAlert);
         CustomAssertions.isTextEqual("Product added", browserAlert);
         productPageSteps.browserBtnAlert();
-
-
     }
 
-    @Test(description = "SR-12130 Verify cart link information")
-    public void testCartLinkInformation() throws InterruptedException {
-        testAlertAddToCartButton();
-
-
-
-    }
 }
