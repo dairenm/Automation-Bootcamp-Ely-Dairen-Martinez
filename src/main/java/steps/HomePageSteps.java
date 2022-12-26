@@ -29,8 +29,8 @@ public class HomePageSteps extends BaseSteps{
     }
 
     public int selectProduct() { // Randomly select a product on the page
-        new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
-                (By.xpath("//a[@href='prod.html?idp_=1']")));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@href='prod.html?idp_=1']")));
         int expectedProduct = Integer.parseInt(String.valueOf(1));
 
         Random rand = new Random();
@@ -39,47 +39,47 @@ public class HomePageSteps extends BaseSteps{
             case 1:
                 homePage.getTxtFirstProduct().click();
                 expectedProduct = 1;
-                System.out.println("First product selected: "+ expectedProduct);
+                System.out.println("First product selected");
                 break;
             case 2:
                 homePage.getTxtSecondProduct().click();
                 expectedProduct = 2;
-                System.out.println("Second product selected: " + expectedProduct);
+                System.out.println("Second product selected");
                 break;
             case 3:
                 homePage.getTxtThirdProduct().click();
                 expectedProduct = 3;
-                System.out.println("Third product selected: " + expectedProduct);
+                System.out.println("Third product selected");
                 break;
             case 4:
                 homePage.getTxtFourthProduct().click();
                 expectedProduct = 4;
-                System.out.println("Fourth product selected: " + expectedProduct);
+                System.out.println("Fourth product selected");
                 break;
             case 5:
                 homePage.getTxtFifthProduct().click();
                 expectedProduct = 5;
-                System.out.println("Fifth product selected: " + expectedProduct);
+                System.out.println("Fifth product selected");
                 break;
             case 6:
                 homePage.getTxtSixthProduct().click();
                 expectedProduct = 6;
-                System.out.println("Sixth product selected: " + expectedProduct);
+                System.out.println("Sixth product selected");
                 break;
             case 7:
                 homePage.getTxtSeventhProduct().click();
                 expectedProduct = 7;
-                System.out.println("Seventh product selected: " + expectedProduct);
+                System.out.println("Seventh product selected");
                 break;
             case 8:
                 homePage.getTxtEightProduct().click();
                 expectedProduct = 8;
-                System.out.println("Eight product selected: " + expectedProduct);
+                System.out.println("Eight product selected");
                 break;
             case 9:
                 homePage.getTxtNinthProduct().click();
                 expectedProduct = 9;
-                System.out.println("Ninth product selected: " + expectedProduct);
+                System.out.println("Ninth product selected");
                 break;
         }
         return expectedProduct;

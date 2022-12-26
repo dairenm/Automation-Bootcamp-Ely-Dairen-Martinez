@@ -18,8 +18,7 @@ public class ProductPageSteps extends BaseSteps{
 
     public ProductPageSteps(WebDriver webDriver) { super(webDriver); }
 
-    public String productName() throws InterruptedException {
-        Thread.sleep(1000);
+    public String productName() {
         return getElementText(productPage.getTxtProductName());
     }
 
@@ -93,9 +92,11 @@ public class ProductPageSteps extends BaseSteps{
     }
 
 
-    public void verifyProductElements () throws InterruptedException {
+    public void verifyProductElements (){
         int selectedProduct= homePageSteps.selectProduct(); // Returns the randomly selected value
         constants();
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@class='btn btn-success btn-lg']")));
         //Verify the name of the product obtained against the expected
         String actualSelectedProductName=names.get(selectedProduct-1);
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
@@ -119,7 +120,6 @@ public class ProductPageSteps extends BaseSteps{
 
         //Verify that the product image has been displayed
         WebElement actualSelectedImage= images.get(selectedProduct-1);
-        Thread.sleep(1000);
         boolean actualSelectedProductImage= isElementDisplayed(actualSelectedImage);
         CustomAssertions.isElementDisplayed(actualSelectedProductImage, true);
         System.out.println("Image Displayed");
@@ -132,8 +132,8 @@ public class ProductPageSteps extends BaseSteps{
     }
 
     public void addToCartButtonClick(){ //Click on the Add To Cart button
-        new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated
-                (By.xpath("//a[@class='btn btn-success btn-lg']")));
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@class='btn btn-success btn-lg']")));
         productPage.getBtnAddToCart().click();
     }
 

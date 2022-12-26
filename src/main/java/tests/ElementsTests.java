@@ -20,7 +20,7 @@ public class ElementsTests extends BaseTest {
     }
 
     @Test(description = "SR-12120 Verify the items of any product in the catalog")
-    public void testCatalogDisplayed() throws InterruptedException {
+    public void testCatalogDisplayed() {
         productPageSteps.verifyProductElements();
         productPageSteps.verifyAddToCartButton();
     }
@@ -30,6 +30,7 @@ public class ElementsTests extends BaseTest {
         homePageSteps.selectProduct();
         productPageSteps.addToCartButtonClick();
         String browserAlert=productPageSteps.browserTextAlert();
+        print("Actual result: " + browserAlert);
         CustomAssertions.isTextEqual("Product added", browserAlert);
         productPageSteps.browserBtnAlert();
     }
