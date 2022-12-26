@@ -1,23 +1,19 @@
 package steps;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageobjects.DropDownExamplePage;
 import pageobjects.HomePage;
-
 import java.time.Duration;
 import java.util.Random;
 
 public class HomePageSteps extends BaseSteps{
 
     HomePage homePage = PageFactory.initElements(webDriver, HomePage.class);
-    DropDownExamplePage dropDownExamplePage = PageFactory.initElements(webDriver, DropDownExamplePage.class);
-    public HomePageSteps(WebDriver webDriver) { super(webDriver); }
 
+    public HomePageSteps(WebDriver webDriver) { super(webDriver); }
 
 
     public String selectPhoneCategorie() {
@@ -27,11 +23,10 @@ public class HomePageSteps extends BaseSteps{
     public String selectLaptopCategorie() {
         return getElementText(homePage.getTxtSecondCategorie());
     }
+
     public String selectMonitorCategorie() {
         return getElementText(homePage.getTxtThirdCategorie());
     }
-
-
 
     public int selectProduct() {
         new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated

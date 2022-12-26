@@ -19,7 +19,6 @@ public class ElementsTests extends BaseTest {
     MiscellaneousSteps miscellaneousSteps = new MiscellaneousSteps(driver);
     HomePageSteps homePageSteps = new HomePageSteps(driver);
     ProductPageSteps productPageSteps = new ProductPageSteps(driver);
-    CartPageSteps cartPageSteps = new CartPageSteps(driver);
 
     @Test
     public void HelloWorldTest() {

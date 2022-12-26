@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.ProductPage;
 import tests.CustomAssertions;
-
 import java.time.Duration;
 import java.util.ArrayList;
 
@@ -16,7 +15,6 @@ import java.util.ArrayList;
 public class ProductPageSteps extends BaseSteps{
     ProductPage productPage = PageFactory.initElements(webDriver, ProductPage.class);
     HomePageSteps homePageSteps = PageFactory.initElements(webDriver, HomePageSteps.class);
-    CustomAssertions customAssertions = PageFactory.initElements(webDriver, CustomAssertions.class);
 
     public ProductPageSteps(WebDriver webDriver) { super(webDriver); }
 
@@ -99,21 +97,18 @@ public class ProductPageSteps extends BaseSteps{
         int selectedProduct= homePageSteps.selectProduct();
         constants();
         String actualSelectedProductName=names.get(selectedProduct-1);
-        System.out.println(actualSelectedProductName);
         System.out.println("Actual selected Product Name: "+ actualSelectedProductName);
         String expectedProductName = productName();
         System.out.println("Expected Product Name: " + expectedProductName);
         CustomAssertions.isTextEqual(actualSelectedProductName, expectedProductName);
 
         String actualSelectedProductPrice=prices.get(selectedProduct-1);
-        System.out.println(actualSelectedProductPrice);
         System.out.println("Actual selected Product Price: "+ actualSelectedProductPrice);
         String expectedProductPrice = productPrice();
         System.out.println("Expected Product Price: " + expectedProductPrice);
         CustomAssertions.isTextEqual(actualSelectedProductPrice, expectedProductPrice);
 
         String actualSelectedProductDescription=description.get(selectedProduct-1);
-        System.out.println(actualSelectedProductDescription);
         System.out.println("Actual selected Product Description: "+ actualSelectedProductDescription);
         String expectedProductDescription = productDescription();
         System.out.println("Expected Product Description: " + expectedProductDescription);

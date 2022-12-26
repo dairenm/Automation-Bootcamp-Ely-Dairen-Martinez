@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/CartPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/CartPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/ProductPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/steps/ProductPageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
       <recent name="ElementActions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ElementsTests.testAlertAddToCartButton">
+  <component name="RunManager" selected="TestNG.ElementsTests.testCatalogDisplayed">
     <configuration name="ElementsTests.testAlertAddToCartButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
       <extension name="coverage">
@@ -141,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
+        <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
         <item itemvalue="TestNG.ElementsTests.testCartLinkInformation" />
         <item itemvalue="TestNG.ElementsTests.testD" />
         <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
@@ -177,7 +171,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java</url>
-          <line>90</line>
+          <line>84</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>

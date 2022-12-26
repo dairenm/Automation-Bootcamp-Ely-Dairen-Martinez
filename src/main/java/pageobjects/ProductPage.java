@@ -76,10 +76,4 @@ public class ProductPage extends BasePage{
 
     public WebElement getImgVaio7() { return imgVaio7; }
 
-
-
-
-
-
-
 }
