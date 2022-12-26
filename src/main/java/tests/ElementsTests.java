@@ -9,15 +9,6 @@ public class ElementsTests extends BaseTest {
     ProductPageSteps productPageSteps = new ProductPageSteps(driver);
 
 
-
-    @Test(groups = "SmokeSuite")
-    public void TestURLisCorrect () {
-        String expectedURL = "https://www.demoblaze.com/";
-        String actualURL = driver.getCurrentUrl();
-
-        CustomAssertions.isURLValid(expectedURL, actualURL);
-    }
-
     @Test(description = "SR-12111 Verify categories",groups = "SmokeSuite")
     public void testVerifiedCategories() {
         String phoneCategorie = homePageSteps.selectPhoneCategorie();
@@ -29,7 +20,7 @@ public class ElementsTests extends BaseTest {
 
     }
 
-    @Test(description = "SR-12120 Verify products in the catalog displayed",groups = "SmokeSuite")
+    @Test(description = "SR-12120 Verify products in the catalog displayed")
     public void testCatalogDisplayed() throws InterruptedException {
         productPageSteps.productElements();
         productPageSteps.addToCartButton();
