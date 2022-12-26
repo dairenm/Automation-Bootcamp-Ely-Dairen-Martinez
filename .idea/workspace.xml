@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/DragDropExamplePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/DropDownExamplePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/HoverOverExamplePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/PracticeFormPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/MiscellaneousSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/PracticeFormSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/SignUpSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,16 +146,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/steps/HomePageSteps.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
