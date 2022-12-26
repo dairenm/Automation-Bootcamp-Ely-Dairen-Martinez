@@ -9,7 +9,6 @@ public class CustomAssertions extends Assert {
         Assert.assertEquals(actualText, expectedText, errorMsg);
     }
 
-
     public static void isElementDisplayed (boolean actual, Boolean expected) {
         String errorMsg =  "The element is not displayed Value:" + actual + " is not as expected. Expected was: " + expected;
         Assert.assertEquals(actual, expected, errorMsg);
