@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="First Suite" duration-ms="9541" started-at="2022-12-26T16:29:18 PST" finished-at="2022-12-26T16:29:27 PST">
+    <groups>
+      <group name="FirstSuite">
+        <method signature="ElementsTests.testAlertAddToCartButton()[pri:0, instance:tests.ElementsTests@4e70a728]" name="testAlertAddToCartButton" class="tests.ElementsTests"/>
+        <method signature="ElementsTests.testVerifiedCategories()[pri:0, instance:tests.ElementsTests@4e70a728]" name="testVerifiedCategories" class="tests.ElementsTests"/>
+      </group> <!-- FirstSuite -->
+    </groups>
+    <test name="First Suite" duration-ms="9541" started-at="2022-12-26T16:29:18 PST" finished-at="2022-12-26T16:29:27 PST">
+      <class name="tests.ElementsTests">
+        <test-method status="PASS" signature="testAlertAddToCartButton()[pri:0, instance:tests.ElementsTests@4e70a728]" name="testAlertAddToCartButton" duration-ms="9159" started-at="2022-12-26T16:29:18 PST" description="SR-12121 Verify the elements of the alert by clicking the Add to cart button" finished-at="2022-12-26T16:29:27 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlertAddToCartButton -->
+        <test-method status="PASS" signature="testVerifiedCategories()[pri:0, instance:tests.ElementsTests@4e70a728]" name="testVerifiedCategories" duration-ms="52" started-at="2022-12-26T16:29:18 PST" description="SR-12111 Verify categories on the home page" finished-at="2022-12-26T16:29:18 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifiedCategories -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ElementsTests@4e70a728]" name="afterTest" is-config="true" duration-ms="312" started-at="2022-12-26T16:29:18 PST" finished-at="2022-12-26T16:29:18 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ElementsTests@4e70a728]" name="afterTest" is-config="true" duration-ms="357" started-at="2022-12-26T16:29:27 PST" finished-at="2022-12-26T16:29:27 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.ElementsTests -->
+    </test> <!-- First Suite -->
+  </suite> <!-- First Suite -->
+</testng-results>

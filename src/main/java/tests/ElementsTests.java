@@ -9,7 +9,7 @@ public class ElementsTests extends BaseTest {
     ProductPageSteps productPageSteps = new ProductPageSteps(driver);
 
 
-    @Test(description = "SR-12111 Verify categories on the home page",groups = "FistSuite")
+    @Test(description = "SR-12111 Verify categories on the home page",groups = "FirstSuite")
     public void testVerifiedCategories() {
         String phoneCategorie = homePageSteps.selectPhoneCategorie();
         String laptopCategorie = homePageSteps.selectLaptopCategorie();
@@ -25,7 +25,7 @@ public class ElementsTests extends BaseTest {
         productPageSteps.verifyAddToCartButton();
     }
 
-    @Test(description ="SR-12121 Verify the elements of the alert by clicking the Add to cart button", groups = "FistSuite")
+    @Test(description ="SR-12121 Verify the elements of the alert by clicking the Add to cart button", groups = "FirstSuite")
     public void testAlertAddToCartButton() throws InterruptedException {
         homePageSteps.selectProduct();
         productPageSteps.addToCartButtonClick();

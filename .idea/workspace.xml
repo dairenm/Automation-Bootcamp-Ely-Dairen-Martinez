@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed936dcc-faec-40c7-bed9-cf7602cb6f25" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ElementsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/ElementsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_groups.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +101,18 @@
     </configuration>
     <configuration name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bootCamp" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_groups.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/outTestNG" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -122,13 +129,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="bootCamp" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/outTestNG" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
+      <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
+      <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
+      <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
+      <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng_groups.xml" />
         <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
+        <item itemvalue="TestNG./Users/dm0921/Documents/GitHub/Bootcamp-Dairen/testng.xml" />
         <item itemvalue="TestNG.ElementsTests.testAlertAddToCartButton" />
         <item itemvalue="TestNG.ElementsTests.testCatalogDisplayed" />
-        <item itemvalue="TestNG.ElementsTests.testVerifiedCategories" />
       </list>
     </recent_temporary>
   </component>
@@ -154,5 +188,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Bootcamp_Dairen$_Users_dm0921_Documents_GitHub_Bootcamp_Dairen_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1672099240846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Elements Tests" thread-count="4" parallel="methods">
-    <test verbose="2" preserve-order="true" name="/Users/dm0921/Documents/GitHub/Bootcamp-Dairen">
+<suite name="First Suite" thread-count="4" parallel="methods">
+    <test verbose="2" preserve-order="true" name="First Suite">
         <groups>
             <run>
-                <include name="FistSuite"></include>
+                <include name="FirstSuite"></include>
             </run>
         </groups>
         <classes>
